@@ -17,7 +17,7 @@ export default function Home() {
             Hello World! I'm jiminu.
           </li>
           <li className="tracking-[-.01em]">
-            수업이 재미있습니다.
+            수업이 재미있습니다!
           </li>
         </ol>
 
