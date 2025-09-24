@@ -25,6 +25,9 @@ export default function Home() {
       <Link href="/resume">
         <button>Resume</button>
       </Link>
+      <Link href="/portfolio">
+        <button>Portfolio</button>
+      </Link>
 
       </main>
     </div>
