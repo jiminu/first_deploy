@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -20,6 +21,13 @@ export default function Home() {
             수업이 재미있습니다!
           </li>
         </ol>
+      
+      <Link href="/resume">
+        <button>Resume</button>
+      </Link>
+      <Link href="/portfolio">
+        <button>Portfolio</button>
+      </Link>
 
       </main>
     </div>
