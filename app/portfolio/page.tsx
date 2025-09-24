@@ -1,19 +1,25 @@
 import axios from 'axios';
 
-const getResumeData = async () => {
-
-    const response = await axios.get('https://raw.githubusercontent.com/jiminu/first_deploy/refs/heads/main/service/resume_general_info_service.json');
-    return fetch('https://raw.githubusercontent.com/jiminu/first_deploy/refs/heads/main/service/resume_general_info_service.json');
+const getPortfolioData = async () => {
+    try {
+        const response = await axios.get('https://raw.githubusercontent.com/jiminu/first_deploy/refs/heads/main/service/resume_portfolio_service.json');
+        return response.data;
+    } catch (error) {
+        console.error(error);
+        return null;
+    }
 }
 
-export default function PortfolioPage() {
+export default async function PortfolioPage() {
     
-    const response = getResumeData();
-    console.log(response);    
+    const response = await getPortfolioData();
+    console.log('response: ', response);    
+    
     return (
         <div>
-            <h1>Portfolio Page</h1>
-            <p>이곳은 포트폴리오 페이지</p>
+            <h1>포트폴리오</h1>
+            <p>첫번째 프로젝트: <a href={response.miniproject1}>프로젝트1 주소</a></p>
+            <p>첫번째 프로젝트: <a href={response.miniproject2}>프로젝트2 주소</a></p>
         </div>
     );
 }
