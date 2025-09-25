@@ -41,10 +41,10 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             안녕하세요, 지민우입니다
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl">
+          {/* <p className="text-xl text-gray-600 mb-8 max-w-2xl">
             열정적으로 코딩을 배우고 있는 개발자입니다. 
             새로운 기술을 익히고 문제를 해결하는 것을 좋아합니다.
-          </p>
+          </p> */}
         </div>
       </section>
 
