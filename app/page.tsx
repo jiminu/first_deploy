@@ -79,12 +79,18 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* 프로젝트 카드들은 나중에 추가 */}
             <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">First Deploy</h3>
-              <p className="text-gray-600 mb-4">Next.js로 만든 첫 번째 포트폴리오 웹사이트</p>
-              <div className="flex gap-2">
-                <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Next.js</span>
-                <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">TypeScript</span>
-              </div>
+              <Link
+                href="https://github.com/jiminu/first_deploy"
+                target="_blank"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">First Deploy</h3>
+                <p className="text-gray-600 mb-4">Next.js로 만든 첫 번째 포트폴리오 웹사이트</p>
+                <div className="flex gap-2">
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Next.js</span>
+                  <span className="text-xs bg-green-100 text-green-800 px-2 py-1 rounded">TypeScript</span>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
