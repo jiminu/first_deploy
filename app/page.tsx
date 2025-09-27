@@ -93,10 +93,10 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="bg-gray-50 py-16">
         <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">마무리</h2>
-          <p className="text-gray-600 mb-8">관심이 있으시면 언제든 연락해주세요.</p>
+          <h2 className="text-3xl font-bold text-gray-900 mb-8">끝맺음</h2>
+          <p className="text-gray-600 mb-8">좋은 인연으로 만나뵐 수 있기를 바랍니다.</p>
           <div className="flex justify-center gap-6">
-            {/* <Link 
+            <Link 
               href="https://github.com/jiminu" 
               target="_blank"
               className="text-gray-600 hover:text-gray-900 transition-colors"
@@ -104,11 +104,11 @@ export default function Home() {
               GitHub
             </Link>
             <Link 
-              href="mailto:your-email@example.com" 
+              href="mailto:jmu417@gmail.com" 
               className="text-gray-600 hover:text-gray-900 transition-colors"
             >
-              Email
-            </Link> */}
+              jmu417@gmail.com
+            </Link>
           </div>
         </div>
       </section>
